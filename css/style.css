@@ -172,6 +172,12 @@ text-size-adjust: 100px;
     text-align: center;
 }
 
+.card-padre {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
 
 
 
