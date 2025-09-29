@@ -24,14 +24,17 @@
 
     <header>
         <nav class="header-nav">
-            <h1 class="Titulo">Valentino Moda</h1>
-            <ul>
+           <img src="./asstes/LOGOTIPO-VM--BJ.png" alt="" class="Titulo">
+            <ul id="nav-links">
                 <li><a href="#"> Inicio </a></li>
                 <li><a href="./pages/ofertas.html"> Ofertas </a></li>
                 <li><a href="./pages/hombres.html">Hombres</a></li>
                 <li><a href="./pages/mujer.html">Mujer</a></li>
                 <li><a href="./pages/niños.html">Niños</a></li>
             </ul>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                &#9776; <!-- Este es el ícono de hamburguesa -->
+            </button>
         </nav>
     </header>
 
@@ -51,7 +54,7 @@
                 <div class="carousel-item active">
                     <img src="https://images.unsplash.com/photo-1544441893-675973e31985?ixlib=rb-4.0.3&w=800&h=400&fit=crop"
                         class="d-block w-100" alt="Grupo urbano">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Estilo Urbano Colectivo</h5>
                         <p>Descubre nuestra colección grupal</p>
                     </div>
@@ -60,7 +63,7 @@
                 <div class="carousel-item">
                     <img src="https://images.unsplash.com/photo-1509475826633-fed577a2c71b?ixlib=rb-4.0.3&w=800&h=400&fit=crop"
                         class="d-block w-100" alt="Modelo urbano">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Casual Street</h5>
                         <p>Ropa cómoda para el día a día</p>
                     </div>
@@ -69,7 +72,7 @@
                 <div class="carousel-item">
                     <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-4.0.3&w=800&h=400&fit=crop"
                         class="d-block w-100" alt="Streetwear">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Streetwear Auténtico</h5>
                         <p>Las mejores marcas urbanas</p>
                     </div>
@@ -78,7 +81,7 @@
                 <div class="carousel-item">
                     <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&w=800&h=400&fit=crop"
                         class="d-block w-100" alt="Moda juvenil">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Estilo Juvenil</h5>
                         <p>Las últimas tendencias para jóvenes</p>
                     </div>
@@ -87,7 +90,7 @@
                 <div class="carousel-item">
                     <img src="https://images.unsplash.com/photo-1485178575877-1a13bf489dfe?ixlib=rb-4.0.3&w=800&h=400&fit=crop"
                         class="d-block w-100" alt="Elegante urbano">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Urban Elegance</h5>
                         <p>Estilo sofisticado para la ciudad</p>
                     </div>
@@ -124,6 +127,16 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous">
+    </script>
+
+    <!-- Script para el menú hamburguesa -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
