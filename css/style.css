@@ -1,3 +1,11 @@
+/* Logo del footer igual tamaño que header */
+footer .imagenes img[alt~="Logo"] {
+    width: 250px;
+    height: auto;
+    display: block;
+    aspect-ratio: unset;
+}
+
 
 
 /* ===== ESTILOS GENERALES Y RESET ===== */
@@ -12,6 +20,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -41,7 +54,7 @@ header {
 
 /* Título / Logotipo */
 .header-nav .Titulo {
-    width: 200px; /* Reducido para mejor ajuste */
+    width: 250px; /* Reducido para mejor ajuste */
     height: auto;
 }
 
@@ -52,6 +65,7 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+        font-family: "Zalando Sans Expanded", sans-serif;
 }
 
 /* Estilo de cada enlace */
@@ -84,8 +98,9 @@ main {
 }
 
 .carruselt {
-    font-family: "Outfit", sans-serif;
-    font-weight: 300;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-style: normal;
+    font-weight: 500;
     margin: 15px;
     padding: 15px;
     font-size: 25px;
@@ -137,10 +152,13 @@ main {
 /* ===== SECCIÓN TARJETAS DE PRODUCTOS (PÁGINA OFERTAS) ===== */
 .card-padre {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px; /* Espacio entre tarjetas */
     flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
     margin: 12px;
+}
+
+.card{
 }
 
 /* ===== FOOTER ===== */
