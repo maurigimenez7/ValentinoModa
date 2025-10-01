@@ -323,7 +323,7 @@ footer .redes img {
 }
 
 /* ===== ESTILOS RESPONSIVE (PARA MÓVILES Y TABLETS) ===== */
-@media (max-width: 768px) {
+@media (max-width: 768px) 
 
     /* --- Navegación --- */
     .menu-toggle {
