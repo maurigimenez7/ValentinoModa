@@ -451,7 +451,8 @@ main.ofertas {
 }
 
 @media (max-width: 900px) {
-    .ropa-nueva .card-padre {
+    .ropa-nueva .card-padre,
+    .ropa-en-oferta .card-padre {
         grid-template-columns: 1fr;
         gap: 20px;
         margin: 16px;
