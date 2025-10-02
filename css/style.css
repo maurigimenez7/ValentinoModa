@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 @media (max-width: 770px) {
     .header-nav {
         position: relative;
     }
+
     .header-nav ul {
         display: none;
         position: absolute;
@@ -20,28 +27,34 @@
         gap: 24px;
         z-index: 100;
         padding: 24px 0 32px 0;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
         transition: all 0.3s;
     }
-    #checkbox:checked ~ .toggle + ul,
-    #checkbox:checked ~ ul {
+
+    #checkbox:checked~.toggle+ul,
+    #checkbox:checked~ul {
         display: flex;
     }
+
     .toggle {
         display: flex;
         width: 32px;
         height: 32px;
         gap: 7px;
     }
+
     .bars {
         height: 3px;
     }
 }
 
 @media (min-width: 771px) {
-    .toggle, #checkbox {
+
+    .toggle,
+    #checkbox {
         display: none !important;
     }
+
     .header-nav ul {
         display: flex !important;
         position: static;
@@ -51,6 +64,7 @@
         gap: 20px;
     }
 }
+
 /* === Animación botón hamburguesa === */
 #checkbox {
     display: none;
@@ -81,7 +95,7 @@
     margin-left: 13px;
 } */
 
-#checkbox:checked + .toggle #bar2 {
+#checkbox:checked+.toggle #bar2 {
     transform: translateY(14px) rotate(60deg);
     margin-left: 0;
     transform-origin: right;
@@ -89,14 +103,14 @@
     z-index: 2;
 }
 
-#checkbox:checked + .toggle #bar1 {
+#checkbox:checked+.toggle #bar1 {
     transform: translateY(28px) rotate(-60deg);
     transition-duration: .3s;
     transform-origin: left;
     z-index: 1;
 }
 
-#checkbox:checked + .toggle {
+#checkbox:checked+.toggle {
     transform: rotate(-90deg);
 }
 
@@ -134,7 +148,8 @@ header {
 
 /* Título / Logotipo */
 .header-nav .Titulo {
-    width: 145px; /* Reducido para mejor ajuste */
+    width: 145px;
+    /* Reducido para mejor ajuste */
     height: auto;
     margin-left: 0px;
 }
@@ -188,10 +203,10 @@ main {
 }
 
 .carruselt {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     margin: 13px;
     padding: 10px;
     font-size: 20px;
@@ -200,7 +215,8 @@ main {
 
 /* ===== SECCIÓN CARRUSEL (PÁGINA DE INICIO) ===== */
 .carousel-item {
-    height: 500px; /* Altura fija para el carrusel */
+    height: 500px;
+    /* Altura fija para el carrusel */
 }
 
 .carousel-item img {
@@ -240,14 +256,29 @@ main {
     background: #5B0CC3(0, 0, 0, 0.2);
 }
 
+.ropa-nueva h3 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 23px;
+    margin: 16px;
+    font-weight: 550;
+    padding: 15px;
+    margin: 15px auto;
+}
+
+.ropa-nueva .card-padre {
+    justify-content: center;
+    /* Mantiene las tarjetas centradas*/
+    font-family: "Montserrat", sans-serif;
+}
 /* ===== SECCIÓN TARJETAS DE PRODUCTOS (PÁGINA OFERTAS) ===== */
 .card-padre {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-        margin: 12px;
-        font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 12px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .card-title {
@@ -258,12 +289,12 @@ main {
 }
 
 .ropa-nueva .card-padre {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-        justify-items: center;
-        margin: 24px auto;
-        max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-items: center;
+    margin: 24px auto;
+    max-width: 1200px;
 }
 
 .card-text {
@@ -274,67 +305,67 @@ main {
     margin-bottom: 10px;
 }
 
-/* From Uiverse.io by abrahamcalsin */ 
+/* From Uiverse.io by abrahamcalsin */
 button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background: #000000;
-  font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  cursor: pointer;
-  border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #000000;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
 }
 
 button:after {
-  content: " ";
-  width: 0%;
-  height: 100%;
-  background: #5B0CC3;
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-  right: 0;
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #5B0CC3;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
 }
 
 button:hover::after {
-  right: auto;
-  left: 0;
-  width: 100%;
+    right: auto;
+    left: 0;
+    width: 100%;
 }
 
 button span {
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  padding: 18px 25px;
-  color: #fff;
-  font-size: 1.125em;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  z-index: 20;
-  transition: all 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #ffffff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover span {
-  color: #ffffff;
-  animation: scaleUp 0.3s ease-in-out;
+    color: #ffffff;
+    animation: scaleUp 0.3s ease-in-out;
 }
 
 @keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(1);
+    }
 
-  50% {
-    transform: scale(0.95);
-  }
+    50% {
+        transform: scale(0.95);
+    }
 
-  100% {
-    transform: scale(1);
-  }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .centrar-boton {
@@ -349,8 +380,43 @@ button:hover span {
 .centrar-boton a {
     text-decoration: none !important;
 }
+
 .centrar-boton a:focus {
     outline: none;
+}
+
+main.ofertas {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.ofertas .sale {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.ropa-en-oferta .card-padre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-items: center;
+    margin: 24px auto;
+    max-width: 1200px;
+}
+
+.ofertas h3 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 23px;
+    margin: 16px;
+    font-weight: 550;
+    padding: 15px;
+    margin: 15px auto;
 }
 
 
@@ -368,7 +434,8 @@ footer {
     color: black;
     padding: 20px;
     margin-top: auto;
-    border-top: 1px solid #e0e0e0; /* Línea sutil de separación */
+    border-top: 1px solid #e0e0e0;
+    /* Línea sutil de separación */
 }
 
 /* Contenedor del contenido del footer */
@@ -400,19 +467,6 @@ footer .redes img {
     cursor: pointer;
 }
 
-.ropa-nueva h3{
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 23px;
-    margin: 16px;
-    font-weight: 550;
-    padding: 15px;
-    margin: 15px auto;
-}
-.ropa-nueva .card-padre{
-    justify-content: center; /* Mantiene las tarjetas centradas*/
-    font-family: "Montserrat", sans-serif;
-}
 
 
 
@@ -423,13 +477,16 @@ footer .redes img {
 
     /* --- Navegación --- */
     .menu-toggle {
-        display: block; /* Muestra el botón de hamburguesa */
+        display: block;
+        /* Muestra el botón de hamburguesa */
     }
 
     .header-nav ul {
-        display: none; /* Oculta el menú por defecto */
+        display: none;
+        /* Oculta el menú por defecto */
         position: absolute;
-        top: 70px; /* Justo debajo del header */
+        top: 70px;
+        /* Justo debajo del header */
         left: 0;
         width: 100%;
         flex-direction: column;
@@ -438,7 +495,8 @@ footer .redes img {
     }
 
     .header-nav ul.active {
-        display: flex; /* Muestra el menú cuando tiene la clase 'active' */
+        display: flex;
+        /* Muestra el menú cuando tiene la clase 'active' */
     }
 
     .header-nav ul li {
@@ -448,21 +506,26 @@ footer .redes img {
 
     .header-nav ul li a:hover {
         color: #109EAA;
-        text-decoration: none; /* Quita el subrayado en móvil */
+        text-decoration: none;
+        /* Quita el subrayado en móvil */
     }
 
     /* --- Carrusel --- */
     .carousel-item {
-        height: 350px; /* Menor altura para el carrusel */
+        height: 350px;
+        /* Menor altura para el carrusel */
     }
 
     .carousel-caption {
-        padding: 10px; /* Menos espaciado interno */
-        bottom: 20px; /* Un poco más arriba */
+        padding: 10px;
+        /* Menos espaciado interno */
+        bottom: 20px;
+        /* Un poco más arriba */
     }
 
     .carousel-caption h5 {
-        font-size: 1.5rem; /* Texto más pequeño */
+        font-size: 1.5rem;
+        /* Texto más pequeño */
     }
 
     .carousel-caption p {
@@ -471,19 +534,30 @@ footer .redes img {
 
     /* --- Footer --- */
     footer .imagenes {
-        flex-direction: column; /* Apila los elementos verticalmente */
-        gap: 15px; /* Añade espacio entre el texto y las redes */
+        flex-direction: column;
+        /* Apila los elementos verticalmente */
+        gap: 15px;
+        /* Añade espacio entre el texto y las redes */
     }
 
-    .ropa-nueva h3{
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 18px;
-    margin: 16px;
-    font-weight: 600;
-    margin-top: 30px;
-    padding: 15px;
-    margin: 15px auto;
+    .ropa-nueva h3 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-size: 18px;
+        margin: 16px;
+        font-weight: 600;
+        margin-top: 30px;
+        padding: 15px;
+        margin: 15px auto;
+    }
+
 }
 
+@media (max-width: 600px) {
+    .ropa-en-oferta .card-padre {
+        grid-template-columns: 1fr;
+    }
+    .ropa-en-oferta {
+        padding: 10px 5px;
+    }
 }
