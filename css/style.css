@@ -385,7 +385,7 @@ button:hover span {
     outline: none;
 }
 
-.sale {
+.ofertas .sale {
     display: block;
     width: 100vw;
     max-width: 100vw;
@@ -398,20 +398,9 @@ button:hover span {
     transform: translateX(-50%);
 }
 
-
 main.ofertas {
     margin-top: 0 !important;
     padding-top: 0 !important;
-}
-
-.ofertas .sale {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 .ropa-en-oferta .card-padre {
