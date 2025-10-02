@@ -180,7 +180,7 @@ header {
 /* Efecto al pasar el mouse sobre el enlace */
 .header-nav ul li a:hover {
     text-decoration: underline;
-    color: #5B0CC3;
+    color: #253489;
 }
 
 /* Botón de menú hamburguesa (oculto en escritorio) */
@@ -253,7 +253,7 @@ main {
 /* Efecto hover en controles */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background: #8e8e8e(0, 0, 0, 0.2);
+    background: #253489(0, 0, 0, 0.2);
 }
 
 .ropa-nueva h3 {
@@ -305,7 +305,6 @@ main {
     margin-bottom: 10px;
 }
 
-/* From Uiverse.io by abrahamcalsin */
 button {
     position: relative;
     display: flex;
@@ -324,7 +323,7 @@ button:after {
     content: " ";
     width: 0%;
     height: 100%;
-    background: #5B0CC3;
+    background: #253489;
     position: absolute;
     transition: all 0.4s ease-in-out;
     right: 0;
@@ -515,7 +514,7 @@ footer .redes img {
     }
 
     .header-nav ul li a:hover {
-        color: #109EAA;
+        color: #253489;
         text-decoration: none;
         /* Quita el subrayado en móvil */
     }
