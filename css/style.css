@@ -281,13 +281,6 @@ main {
     font-family: "Montserrat", sans-serif;
 }
 
-.card-title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    margin: 10px 0 5px 0;
-}
-
 .ropa-nueva .card-padre {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -438,11 +431,21 @@ main.ofertas {
     height: auto;
 }
 
+.anuncio-mujer {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .main-mujer {
     padding-top: 0;
 }
 
-.anuncio-mujer {
+.main-niños {
+    padding-top: 0;
+}
+
+.anuncio-niños {
     display: block;
     width: 100%;
     height: auto;
@@ -501,91 +504,3 @@ footer .redes img {
 
 
 /* ===== ESTILOS RESPONSIVE (PARA MÓVILES Y TABLETS) ===== */
-@media (max-width: 768px) {
-
-    /* --- Navegación --- */
-    .menu-toggle {
-        display: block;
-        /* Muestra el botón de hamburguesa */
-    }
-
-    .header-nav ul {
-        display: none;
-        /* Oculta el menú por defecto */
-        position: absolute;
-        top: 70px;
-        /* Justo debajo del header */
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background-color: #5E5E5E;
-        padding: 10px 0;
-    }
-
-    .header-nav ul.active {
-        display: flex;
-        /* Muestra el menú cuando tiene la clase 'active' */
-    }
-
-    .header-nav ul li {
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .header-nav ul li a:hover {
-        color: #253489;
-        text-decoration: none;
-        /* Quita el subrayado en móvil */
-    }
-
-    /* --- Carrusel --- */
-    .carousel-item {
-        height: 350px;
-        /* Menor altura para el carrusel */
-    }
-
-    .carousel-caption {
-        padding: 10px;
-        /* Menos espaciado interno */
-        bottom: 20px;
-        /* Un poco más arriba */
-    }
-
-    .carousel-caption h5 {
-        font-size: 1.5rem;
-        /* Texto más pequeño */
-    }
-
-    .carousel-caption p {
-        font-size: 1rem;
-    }
-
-    /* --- Footer --- */
-    footer .imagenes {
-        flex-direction: column;
-        /* Apila los elementos verticalmente */
-        gap: 15px;
-        /* Añade espacio entre el texto y las redes */
-    }
-
-    .ropa-nueva h3 {
-        font-family: "Montserrat", sans-serif;
-        text-align: center;
-        font-size: 18px;
-        margin: 16px;
-        font-weight: 600;
-        margin-top: 30px;
-        padding: 15px;
-        margin: 15px auto;
-    }
-
-}
-
-@media (max-width: 600px) {
-    .ropa-en-oferta .card-padre {
-        grid-template-columns: 1fr;
-    }
-    .ropa-en-oferta {
-        padding: 10px 5px;
-    }
-}
