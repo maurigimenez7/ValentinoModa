@@ -253,7 +253,7 @@ main {
 /* Efecto hover en controles */
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background: #5B0CC3(0, 0, 0, 0.2);
+    background: #8e8e8e(0, 0, 0, 0.2);
 }
 
 .ropa-nueva h3 {
