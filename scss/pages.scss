@@ -1,0 +1,18 @@
+@import 'mixins';
+
+main {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.main-home, .main-hombres, .main-mujer, .main-niños {
+  padding-top: 0;
+}
+
+.anuncio-hombres,
+.anuncio-mujer,
+.anuncio-niños {
+  display: block;
+  width: 100%;
+  height: auto;
+}
