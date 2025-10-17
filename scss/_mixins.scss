@@ -1,0 +1,19 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin shadow($x: 0, $y: 4px, $blur: 10px, $color: rgba(0,0,0,0.1)) {
+  box-shadow: $x $y $blur $color;
+}
+
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 770px) { @content; }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 900px) { @content; }
+  }
+}
