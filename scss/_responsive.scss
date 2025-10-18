@@ -1,0 +1,61 @@
+@include responsive-mobile {
+    .header-nav {
+        position: relative;
+        
+        ul {
+            display: none;
+            position: absolute;
+            top: $header-height;
+            left: 0;
+            width: 100vw;
+            background: $color-secondary;
+            @include flex-column;
+            align-items: center;
+            gap: $spacing-xl;
+            z-index: 100;
+            padding: $spacing-xl 0 $spacing-xxl 0;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+        }
+        
+        #checkbox:checked ~ .toggle + ul,
+        #checkbox:checked ~ ul {
+            display: flex;
+        }
+        
+        .toggle {
+            display: flex;
+            width: 32px;
+            height: 32px;
+            gap: 7px;
+        }
+        
+        .bars {
+            height: 3px;
+        }
+    }
+}
+
+@include responsive-tablet {
+    .toggle, #checkbox {
+        display: none !important;
+    }
+    
+    .header-nav ul {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+        gap: $spacing-lg;
+    }
+}
+
+@include responsive-mobile {
+    .ropa-nueva .card-padre,
+    .ropa-en-oferta .card-padre {
+        grid-template-columns: 1fr;
+        gap: $spacing-lg;
+        margin: $spacing-md;
+    }
+}

@@ -1,90 +1,38 @@
-@import 'variables', 'mixins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: $color-white
+}
 
 header {
-  background-color: $color-principal;
-  position: relative;
-  z-index: 10;
+    background-color: $color-secondary;
+    position: relative;
+    z-index: 10;
 }
 
 .header-nav {
-  height: 70px;
-  @include center;
-  justify-content: space-between;
-  color: white;
-  max-width: $ancho-maximo;
-  margin: 0 auto;
-  padding: 0 $padding-base;
-
-  .Titulo {
-    width: 145px;
-  }
-
-  ul {
-    @include center;
-    list-style: none;
-    gap: 20px;
-    font-size: 15px;
-
-    li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-
-      &:hover {
-        text-decoration: underline;
-        color: $color-secundario;
-      }
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-lg;
+    
+    .Titulo {
+        width: 145px;
+        height: auto;
+        margin-left: 0;
     }
-  }
-
-  @include responsive(mobile) {
-    position: relative;
-
-    ul {
-      display: none;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      width: 100vw;
-      background: $color-principal;
-      flex-direction: column;
-      align-items: center;
-      gap: 24px;
-      padding: 24px 0 32px;
-      z-index: 100;
-      @include shadow(0, 8px, 24px, rgba(0,0,0,0.08));
-      transition: all 0.3s;
-    }
-
-    #checkbox:checked ~ ul {
-      display: flex;
-    }
-
-    .toggle {
-      display: flex;
-      width: 32px;
-      height: 32px;
-      gap: 7px;
-    }
-
-    .bars {
-      height: 3px;
-      background-color: white;
-      width: 100%;
-      transition: all 0.3s ease-in-out;
-    }
-
-    #checkbox:checked ~ .toggle #bar1 {
-      transform: rotate(45deg) translate(5px, 6px);
-    }
-
-    #checkbox:checked ~ .toggle #bar2 {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-
-    #checkbox:checked ~ .toggle #bar3 {
-      transform: rotate(-45deg) translate(5px, -6px);
-    }
-  }
 }

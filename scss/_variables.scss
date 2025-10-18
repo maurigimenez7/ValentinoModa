@@ -1,9 +1,27 @@
-$color-principal: #5E5E5E;
-$color-secundario: #253489;
-$color-fondo: #ffffff;
-$color-texto: #000000;
+$color-primary: #253489;
+$color-secondary: #5E5E5E;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-text: #000000;
 
-$fuente-base: 'Montserrat', sans-serif;
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Zalando Sans Expanded", sans-serif;
 
-$ancho-maximo: 1200px;
-$padding-base: 20px;
+$font-size-xs: 13px;
+$font-size-sm: 15px;
+$font-size-md: 20px;
+$font-size-lg: 23px;
+$font-size-xl: 2rem;
+
+$spacing-xs: 10px;
+$spacing-sm: 15px;
+$spacing-md: 16px;
+$spacing-lg: 20px;
+$spacing-xl: 24px;
+$spacing-xxl: 32px;
+
+$breakpoint-mobile: 770px;
+$breakpoint-tablet: 771px;
+
+$header-height: 70px;
+$carousel-height: 500px;
