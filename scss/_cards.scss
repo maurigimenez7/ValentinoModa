@@ -1,18 +1,18 @@
 @import 'variables', 'mixins';
 
 .card-padre {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 12px;
-  font-family: $fuente-base;
+  display: flex; // Usamos flexbox para alinear las tarjetas
+  justify-content: center; // Centramos las tarjetas en el contenedor
+  gap: 20px; // Espacio entre tarjetas
+  flex-wrap: wrap; // Permitimos que las tarjetas pasen a la siguiente línea si no caben
+  margin: 12px; // Margen exterior
+  font-family: $fuente-base; // Usamos la fuente base
+}
 
-  @include responsive(tablet) {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin: 16px;
+.card {
+  width: 18rem; // Definimos el ancho de la tarjeta aquí en lugar de en el HTML
+  @include responsive(mobile) {
+    width: 90%; // Hacemos que la tarjeta ocupe más espacio en móviles
   }
 }
 

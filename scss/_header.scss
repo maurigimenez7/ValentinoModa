@@ -67,6 +67,24 @@ header {
       gap: 7px;
     }
 
-    .bars { height: 3px; }
+    .bars {
+      height: 3px;
+      background-color: white;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    #checkbox:checked ~ .toggle #bar1 {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    #checkbox:checked ~ .toggle #bar2 {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+
+    #checkbox:checked ~ .toggle #bar3 {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
   }
 }
