@@ -1,72 +1,43 @@
-button {
-    font-family: $font-primary;
-    text-align: center;
-    font-size: $font-size-xs;
-    position: relative;
-    @include flex-center;
-    border-radius: 5px;
-    background: $color-primary;
-    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    cursor: pointer;
-    border: none;
-    
-    &:after {
-        content: " ";
-        width: 0%;
-        height: 100%;
-        background: $color-black;
-        position: absolute;
-        transition: all 0.4s ease-in-out;
-        right: 0;
-    }
-    
-    &:hover::after {
-        right: auto;
-        left: 0;
-        width: 100%;
-    }
-    
-    span {
-        text-align: center;
-        text-decoration: none;
-        width: 100%;
-        padding: 18px 25px;
-        color: $color-white;
-        font-size: 1.125em;
-        font-weight: 700;
-        letter-spacing: 0.3em;
-        z-index: 20;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    &:hover span {
-        color: $color-white;
-        animation: scaleUp 0.3s ease-in-out;
-    }
-}
+@import 'variables', 'extends';
 
-@keyframes scaleUp {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.95); }
-    100% { transform: scale(1); }
+button {
+  @extend %boton-base;
+  background: $color-texto;
+  color: white;
+  box-shadow: 0px 6px 24px 0 rgba(0, 0, 0, 0.2);
+
+  &::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: $color-secundario;
+    position: absolute;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover::after {
+    left: 0;
+    width: 100%;
+  }
+
+  span {
+    position: relative;
+    z-index: 10;
+    padding: 18px 25px;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+  }
 }
 
 .centrar-boton {
-    @include flex-center;
-    margin-top: auto;
-    padding-top: $spacing-lg;
+  @include center;
+  width: 100%;
+  margin: 30px 0;
+
+  a {
     text-decoration: none;
-    
-    a {
-        text-decoration: none !important;
-        
-        &:focus {
-            outline: none;
-        }
-    }
-    
-    button {
-        width: 100%;
-    }
+    &:focus { outline: none; }
+  }
 }

@@ -1,32 +1,31 @@
+@import 'variables', 'mixins';
+
 footer {
-    background-color: $color-white;
-    color: $color-black;
-    padding: $spacing-lg;
-    margin-top: auto;
-    border-top: 1px solid #e0e0e0;
-}
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: auto;
+  border-top: 1px solid #e0e0e0;
 
-footer .imagenes {
-    display: flex;
+  .imagenes {
+    @include center;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
+    max-width: $ancho-maximo;
     margin: 0 auto;
-}
+  }
 
-footer .logo-negro {
+  .logo-negro {
     width: 145px;
-    height: auto;
-    margin-left: 0;
-}
+  }
 
-footer .redes {
+  .redes {
     display: flex;
-    gap: $spacing-sm;
-}
+    gap: 15px;
 
-footer .redes img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+    img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
 }

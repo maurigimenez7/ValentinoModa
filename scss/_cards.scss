@@ -1,48 +1,26 @@
-.carruselt {
-    font-family: $font-primary;
-    font-weight: 700;
-    margin: 13px;
-    padding: $spacing-xs;
-    font-size: $font-size-md;
-    text-align: center;
+@import 'variables', 'mixins';
+
+.card-padre {
+  display: flex; // Usamos flexbox para alinear las tarjetas
+  justify-content: center; // Centramos las tarjetas en el contenedor
+  gap: 20px; // Espacio entre tarjetas
+  flex-wrap: wrap; // Permitimos que las tarjetas pasen a la siguiente línea si no caben
+  margin: 12px; // Margen exterior
+  font-family: $fuente-base; // Usamos la fuente base
 }
 
-.carousel-item {
-    height: $carousel-height;
-    
-    img {
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.8);
-    }
+.card {
+  width: 18rem; // Definimos el ancho de la tarjeta aquí en lugar de en el HTML
+  @include responsive(mobile) {
+    width: 90%; // Hacemos que la tarjeta ocupe más espacio en móviles
+  }
 }
 
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    padding: $spacing-lg;
-    border-radius: 10px;
-    bottom: 50px;
-    
-    h5 {
-        font-family: $font-secondary;
-        font-size: $font-size-xl;
-        font-weight: 600;
-    }
-    
-    p {
-        font-family: $font-secondary;
-        font-size: 1.2rem;
-    }
-}
-
-.carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 5px;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background: rgba(37, 52, 137, 0.2);
+.ropa-nueva h3, .ofertas h3 {
+  font-family: $fuente-base;
+  text-align: center;
+  font-size: 23px;
+  margin: 16px auto;
+  font-weight: 550;
+  padding: 15px;
 }
