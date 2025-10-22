@@ -1,48 +1,11 @@
-@import 'variables', 'extends';
+@import 'variables', 'extends', 'mixins';
 
-button {
+// Estilos base para todos los botones
+%boton-animado {
   @extend %boton-base;
   background: $color-texto;
   color: white;
   box-shadow: 0px 6px 24px 0 rgba(0, 0, 0, 0.2);
-
-  &::after {
-    content: "";
-    width: 0%;
-    height: 100%;
-    background: $color-secundario;
-    position: absolute;
-    right: 0;
-    transition: all 0.4s ease-in-out;
-  }
-
-  &:hover::after {
-    left: 0;
-    width: 100%;
-  }
-
-  span {
-    position: relative;
-    z-index: 10;
-    padding: 18px 25px;
-    font-size: 1.125em;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-  }
-}
-
-// Estilos para botones de comprar en las cards
-.btn-primary {
-  @extend %boton-base;
-  background: $color-texto;
-  color: white;
-  box-shadow: 0px 6px 24px 0 rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  width: 100%;
-  padding: 18px 25px;
-  font-size: 1.125em;
-  font-weight: 700;
-  letter-spacing: 0.3em;
 
   &::after {
     content: "";
@@ -63,6 +26,29 @@ button {
     color: white;
     text-decoration: none;
   }
+}
+
+button {
+  @extend %boton-animado;
+
+  span {
+    position: relative;
+    z-index: 10;
+    padding: 18px 25px;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+  }
+}
+
+.btn-primary {
+  @extend %boton-animado;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
 }
 
 .centrar-boton {

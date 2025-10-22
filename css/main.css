@@ -127,12 +127,12 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-button {
+.btn-primary, button {
   background: #000000;
   color: white;
   box-shadow: 0px 6px 24px 0 rgba(0, 0, 0, 0.2);
 }
-button::after {
+.btn-primary::after, button::after {
   content: "";
   width: 0%;
   height: 100%;
@@ -141,10 +141,15 @@ button::after {
   right: 0;
   transition: all 0.4s ease-in-out;
 }
-button:hover::after {
+.btn-primary:hover::after, button:hover::after {
   left: 0;
   width: 100%;
 }
+.btn-primary:hover, button:hover {
+  color: white;
+  text-decoration: none;
+}
+
 button span {
   position: relative;
   z-index: 10;
@@ -155,32 +160,12 @@ button span {
 }
 
 .btn-primary {
-  background: #000000;
-  color: white;
-  box-shadow: 0px 6px 24px 0 rgba(0, 0, 0, 0.2);
   text-decoration: none;
   width: 100%;
   padding: 18px 25px;
   font-size: 1.125em;
   font-weight: 700;
   letter-spacing: 0.3em;
-}
-.btn-primary::after {
-  content: "";
-  width: 0%;
-  height: 100%;
-  background: #253489;
-  position: absolute;
-  right: 0;
-  transition: all 0.4s ease-in-out;
-}
-.btn-primary:hover::after {
-  left: 0;
-  width: 100%;
-}
-.btn-primary:hover {
-  color: white;
-  text-decoration: none;
 }
 
 .centrar-boton {
@@ -284,5 +269,3 @@ footer .redes img {
   height: 30px;
   cursor: pointer;
 }
-
-/*# sourceMappingURL=main.css.map */
