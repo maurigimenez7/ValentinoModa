@@ -31,6 +31,40 @@ button {
   }
 }
 
+// Estilos para botones de comprar en las cards
+.btn-primary {
+  @extend %boton-base;
+  background: $color-texto;
+  color: white;
+  box-shadow: 0px 6px 24px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+
+  &::after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: $color-secundario;
+    position: absolute;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:hover::after {
+    left: 0;
+    width: 100%;
+  }
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
 .centrar-boton {
   @include center;
   width: 100%;

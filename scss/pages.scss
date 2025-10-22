@@ -9,10 +9,26 @@ main {
   padding-top: 0;
 }
 
-.anuncio-hombres,
-.anuncio-mujer,
+.anuncio-hombres {
+  display: block;
+  width: 100vw;
+  height: auto;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+.anuncio-mujer {
+  display: block;
+  width: 100vw;
+  height: auto;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
 .anuncio-niños {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: auto;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
 }
