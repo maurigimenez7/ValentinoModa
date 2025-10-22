@@ -9,6 +9,26 @@ main {
   padding-top: 0;
 }
 
+.ofertas {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100vw !important;
+  width: 100vw !important;
+}
+
+.ofertas .sale {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
 .anuncio-hombres {
   display: block;
   width: 100vw;

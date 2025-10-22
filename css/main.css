@@ -58,19 +58,41 @@ header {
   list-style: none;
   gap: 20px;
   font-size: 15px;
+  height: 100%;
+}
+.header-nav ul li {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .header-nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .header-nav ul li a:hover {
   text-decoration: underline;
   color: #253489;
 }
+.header-nav .toggle, .header-nav #checkbox {
+  display: none;
+}
 @media (max-width: 770px) {
   .header-nav {
     position: relative;
+  }
+  .header-nav .toggle, .header-nav #checkbox {
+    display: block;
+  }
+  .header-nav .toggle {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    gap: 7px;
   }
   .header-nav ul {
     display: none;
@@ -89,12 +111,6 @@ header {
   }
   .header-nav #checkbox:checked ~ ul {
     display: flex;
-  }
-  .header-nav .toggle {
-    display: flex;
-    width: 32px;
-    height: 32px;
-    gap: 7px;
   }
   .header-nav .bars {
     height: 3px;
@@ -162,10 +178,12 @@ button span {
 .btn-primary {
   text-decoration: none;
   width: 100%;
-  padding: 18px 25px;
-  font-size: 1.125em;
-  font-weight: 700;
-  letter-spacing: 0.3em;
+  padding: 12px 20px;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  position: relative;
+  z-index: 10;
 }
 
 .centrar-boton {
@@ -183,20 +201,33 @@ button span {
 }
 
 .card-padre {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+  margin: 24px auto;
+  max-width: 1200px;
   font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 900px) {
+  .card-padre {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 16px;
+  }
 }
 
 .card {
   width: 18rem;
+  max-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 @media (max-width: 770px) {
   .card {
     width: 90%;
+    max-width: none;
   }
 }
 
@@ -209,6 +240,36 @@ button span {
   padding: 15px;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #000000;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
 main {
   flex: 1;
   padding: 20px 0;
@@ -216,6 +277,26 @@ main {
 
 .main-home, .main-hombres, .main-mujer, .main-niños {
   padding-top: 0;
+}
+
+.ofertas {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100vw !important;
+  width: 100vw !important;
+}
+
+.ofertas .sale {
+  display: block;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
 }
 
 .anuncio-hombres {
