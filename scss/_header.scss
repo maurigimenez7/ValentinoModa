@@ -50,24 +50,36 @@ header {
     }
   }
 
-  // Ocultar botón hamburguesa en escritorio
-  .toggle, #checkbox {
+  // Ocultar botón hamburguesa y checkbox en escritorio
+  .toggle {
+    display: none;
+  }
+
+  #checkbox {
     display: none;
   }
 
   @include responsive(mobile) {
     position: relative;
 
-    // Mostrar botón hamburguesa en móvil
-    .toggle, #checkbox {
-      display: block;
+    // Checkbox completamente oculto pero funcional
+    #checkbox {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      width: 0;
+      height: 0;
     }
 
+    // Mostrar botón hamburguesa en móvil
     .toggle {
       display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       width: 32px;
       height: 32px;
-      gap: 7px;
+      cursor: pointer;
+      z-index: 101;
     }
 
     ul {
@@ -83,7 +95,7 @@ header {
       padding: 24px 0 32px;
       z-index: 100;
       @include shadow(0, 8px, 24px, rgba(0,0,0,0.08));
-      transition: all 0.3s;
+      transition: all 0.3s ease-in-out;
     }
 
     #checkbox:checked ~ ul {
@@ -94,11 +106,12 @@ header {
       height: 3px;
       background-color: white;
       width: 100%;
+      border-radius: 2px;
       transition: all 0.3s ease-in-out;
     }
 
     #checkbox:checked ~ .toggle #bar1 {
-      transform: rotate(45deg) translate(5px, 6px);
+      transform: rotate(45deg) translate(7px, 7px);
     }
 
     #checkbox:checked ~ .toggle #bar2 {
@@ -107,7 +120,7 @@ header {
     }
 
     #checkbox:checked ~ .toggle #bar3 {
-      transform: rotate(-45deg) translate(5px, -6px);
+      transform: rotate(-45deg) translate(7px, -7px);
     }
   }
 }
