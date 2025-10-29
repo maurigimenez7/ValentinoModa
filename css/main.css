@@ -242,7 +242,7 @@ button span {
   }
 }
 
-.ropa-nueva h3, .ofertas h3 {
+.ropa-nueva h1, .ofertas h1 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 23px;
@@ -361,3 +361,5 @@ footer .redes img {
   height: 30px;
   cursor: pointer;
 }
+
+/*# sourceMappingURL=main.css.map */
