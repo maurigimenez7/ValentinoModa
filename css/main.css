@@ -40,11 +40,9 @@ header {
 .header-nav {
   height: 70px;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-between;
   color: white;
-  max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -75,7 +73,6 @@ header {
   height: 100%;
 }
 .header-nav ul li a:hover {
-  text-decoration: underline;
   color: #253489;
 }
 .header-nav .toggle {
