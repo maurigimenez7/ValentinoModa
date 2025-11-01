@@ -10,8 +10,6 @@ footer {
   .imagenes {
     @include center;
     justify-content: space-between;
-    max-width: $ancho-maximo;
-    margin: 0 auto;
   }
 
   .logo-negro {
