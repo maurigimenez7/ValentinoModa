@@ -1,145 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubre la colección de moda masculina en Valentino Moda. Ropa urbana y casual para el hombre de hoy. Remeras, bermudas, camisas, buzos y jeans de la mejor calidad.">
-    <meta name="keywords" content="moda hombre, ropa de hombre, remeras, bermudas, camisas, buzos, jeans, estilo masculino, estilo oversize, Valentino Moda">
-    <title>Ropa de Hombre - Moda Urbana | Valentino Moda</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moda masculina urbana: remeras, bermudas, camisas, buzos y jeans de calidad.">
+  <title>Ropa de hombre | Valentino Moda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..700&family=Zalando+Sans+Expanded:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
-
 <body>
-
-
-<header>
-    <nav class="header-nav">
-        <a href="../index.html">
-            <img src="../asstes/LOGOTIPO-VM--BJ.png" alt="Valentino Moda Logo" class="Titulo">
-        </a>
-        <form class="header-search">
-            <input type="search" placeholder="Buscar productos...">
-            <button type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
-            </button>
-        </form>
-        <input id="checkbox" type="checkbox">
-        <label class="toggle" for="checkbox">
-            <div id="bar1" class="bars"></div>
-            <div id="bar2" class="bars"></div>
-            <div id="bar3" class="bars"></div>
-        </label>
-        <ul id="nav-links">
-            <li><a href="../index.html"> Inicio </a></li>
-            <li><a href="./ofertas.html"> Ofertas </a></li>
-            <li><a href="#">Hombres</a></li>
-            <li><a href="./mujer.html">Mujer</a></li>
-            <li><a href="./ninos.html">Niños</a></li>
-            <li>
-                <a href="#" aria-label="Carrito de compras">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-                </a>
-            </li>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="Valentino Moda, ir al inicio">
+        <img src="../assets/LOGOTIPO-VM--BJ.png" alt="Valentino Moda" height="40">
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="hombres.html" aria-current="page">Hombres</a></li>
+          <li><a href="mujer.html">Mujer</a></li>
+          <li><a href="ninos.html">Niños</a></li>
         </ul>
-    </nav>
-</header>
-
-
-<main class="main-hombres">
-<img src="../asstes/hombres.png" alt="anuncio hombres" class="anuncio-hombres">
-
-        <div class="ropa-nueva">
-            <h1>MEN IN - VALENTINO MODA</h1>
-            <div class="card-padre">
-                <div class="card">
-                    <img src="../asstes/mockup-remera-azul-trasero-2-fe8dae876905d5a09417573382246751-480-0.png"
-                        class="card-img-top" alt="remera azul oversize">
-                    <div class="card-body">
-                        <h2 class="card-title">REMERA OVERSIZE CREAM DRIP</h2>
-                        <p class="card-text">Remera Oversize Liviana.</p>
-                        <p class="price">$32.000</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../asstes/mockup-bermuda-baggy-shato-frente-b4167bac01f41a062017592552735994-480-0.jpg"
-                        class="card-img-top" alt="bermuda de jean baggy">
-                    <div class="card-body">
-                        <h2 class="card-title">BERMUDA BAGGY NAVY</h2>
-                        <p class="card-text">Bermuda de Jean Baggy.</p>
-                        <p class="price">$54.000</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../asstes/camisa-gabardina-crudo-frente-45838a40cd1483b63417592400938615-640-0.png"
-                        class="card-img-top" alt="camisa de gabardina cruda">
-                    <div class="card-body">
-                        <h2 class="card-title">CAMISA GABARDINA BLOOM</h2>
-                        <p class="card-text">Camisa de gabardina cruda.</p>
-                        <p class="price">$50.000</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../asstes/buzo-negro-d-2-39c462f2039d1387b017556306474199-480-0.png" class="card-img-top"
-                        alt="buzo negro over">
-                    <div class="card-body">
-                        <h2 class="card-title">BUZO OVERSIZE NOT BRAND</h2>
-                        <p class="card-text">Buzo de Algodón Oversize.</p>
-                        <p class="price">$58.000</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../asstes/short-gabardina-crudo-frente-7d64c9c6eb48a7ffc217592396418642-640-0.png"
-                        class="card-img-top" alt="short de gabardina crudo">
-                    <div class="card-body">
-                        <h2 class="card-title">BERMUDA GABARDINA BLOOM</h2>
-                        <p class="card-text">Bermuda de Gabardina Cruda.</p>
-                        <p class="price">$50.000</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../asstes/whatsapp-image-2025-09-08-at-9-42-05-am-42c63646567beab9b017573381079147-480-0.jpg"
-                        class="card-img-top" alt="jean negro elastizado">
-                    <div class="card-body">
-                        <h2 class="card-title">Jean Curve</h2>
-                        <p class="card-text">Jean Negro Elastizado.</p>
-                        <p class="price">$50.000</p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="cart-link" aria-label="Carrito de compras"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+  <div class="promo">
+    <img src="../assets/hombres.png" alt="Colección de hombres">
+  </div>
+  <section class="section">
+    <div class="container">
+      <header class="section-head">
+        <h1 class="section-title">Hombres</h1>
+        <p class="section-sub">Remeras, bermudas, camisas, buzos y jeans</p>
+      </header>
+      <div class="grid">
+          <article class="product">
+            <figure class="product-media">
+              <img src="../assets/mockup-remera-azul-trasero-2-fe8dae876905d5a09417573382246751-480-0.png" alt="Remera oversize azul" loading="lazy">
+            </figure>
+            <div class="product-body">
+              <h3 class="product-name">Remera Oversize Cream Drip</h3>
+              <p class="product-desc">Remera oversize liviana.</p>
+              <div class="product-foot">
+                <div><span class="price">$32.000</span></div>
+                <a class="btn-buy" href="https://wa.me/5490000000000?text=Hola%21%20Quiero%20comprar%20Remera%20Oversize%20Cream%20Drip" target="_blank" rel="noopener">Comprar</a>
+              </div>
             </div>
-        </div>
-
-</main>
-
-
-<footer>
-    <div class="imagenes">
-        <a href="../index.html">
-            <img class="logo-negro" src="../asstes/upscalemedia-transformed.png" alt="logotipo negro">
-        </a>
-        <div class="redes">
-            <img src="../asstes/whastapp.png" alt="whatsapp">
-            <img src="../asstes/facebook.png" alt="facebook">
-            <img src="../asstes/logotipo-de-instagram.png" alt="instagram">
+          </article>
+          <article class="product">
+            <figure class="product-media">
+              <img src="../assets/mockup-bermuda-baggy-shato-frente-b4167bac01f41a062017592552735994-480-0.jpg" alt="Bermuda de jean baggy" loading="lazy">
+            </figure>
+            <div class="product-body">
+              <h3 class="product-name">Bermuda Baggy Navy</h3>
+              <p class="product-desc">Bermuda de jean baggy.</p>
+              <div class="product-foot">
+                <div><span class="price">$54.000</span></div>
+                <a class="btn-buy" href="https://wa.me/5490000000000?text=Hola%21%20Quiero%20comprar%20Bermuda%20Baggy%20Navy" target="_blank" rel="noopener">Comprar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <figure class="product-media">
+              <img src="../assets/camisa-gabardina-crudo-frente-45838a40cd1483b63417592400938615-640-0.png" alt="Camisa de gabardina cruda" loading="lazy">
+            </figure>
+            <div class="product-body">
+              <h3 class="product-name">Camisa Gabardina Bloom</h3>
+              <p class="product-desc">Camisa de gabardina cruda.</p>
+              <div class="product-foot">
+                <div><span class="price">$50.000</span></div>
+                <a class="btn-buy" href="https://wa.me/5490000000000?text=Hola%21%20Quiero%20comprar%20Camisa%20Gabardina%20Bloom" target="_blank" rel="noopener">Comprar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <figure class="product-media">
+              <img src="../assets/buzo-negro-d-2-39c462f2039d1387b017556306474199-480-0.png" alt="Buzo negro oversize" loading="lazy">
+            </figure>
+            <div class="product-body">
+              <h3 class="product-name">Buzo Oversize Not Brand</h3>
+              <p class="product-desc">Buzo de algodón oversize.</p>
+              <div class="product-foot">
+                <div><span class="price">$58.000</span></div>
+                <a class="btn-buy" href="https://wa.me/5490000000000?text=Hola%21%20Quiero%20comprar%20Buzo%20Oversize%20Not%20Brand" target="_blank" rel="noopener">Comprar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <figure class="product-media">
+              <img src="../assets/short-gabardina-crudo-frente-7d64c9c6eb48a7ffc217592396418642-640-0.png" alt="Bermuda de gabardina cruda" loading="lazy">
+            </figure>
+            <div class="product-body">
+              <h3 class="product-name">Bermuda Gabardina Bloom</h3>
+              <p class="product-desc">Bermuda de gabardina cruda.</p>
+              <div class="product-foot">
+                <div><span class="price">$50.000</span></div>
+                <a class="btn-buy" href="https://wa.me/5490000000000?text=Hola%21%20Quiero%20comprar%20Bermuda%20Gabardina%20Bloom" target="_blank" rel="noopener">Comprar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <figure class="product-media">
+              <img src="../assets/whatsapp-image-2025-09-08-at-9-42-05-am-42c63646567beab9b017573381079147-480-0.jpg" alt="Jean negro elastizado" loading="lazy">
+            </figure>
+            <div class="product-body">
+              <h3 class="product-name">Jean Curve</h3>
+              <p class="product-desc">Jean negro elastizado.</p>
+              <div class="product-foot">
+                <div><span class="price">$50.000</span></div>
+                <a class="btn-buy" href="https://wa.me/5490000000000?text=Hola%21%20Quiero%20comprar%20Jean%20Curve" target="_blank" rel="noopener">Comprar</a>
+              </div>
+            </div>
+          </article>
         </div>
     </div>
-</footer>
-
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="../index.html" aria-label="Valentino Moda, ir al inicio">
+        <img class="footer-logo" src="../assets/upscalemedia-transformed.png" alt="Valentino Moda">
+      </a>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+      <p class="footer-copy">© <span id="year">2026</span> Valentino Moda</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
 </body>
-
 </html>
