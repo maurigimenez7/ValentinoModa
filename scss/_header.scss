@@ -19,6 +19,33 @@ header {
     width: 145px;
   }
 
+  .header-search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 30%;
+    min-width: 200px;
+
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 14px;
+      color: #333;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
   ul {
     display: flex;
     justify-content: center;
@@ -60,6 +87,11 @@ header {
 
   @include responsive(mobile) {
     position: relative;
+
+    // Ocultar search en mobile para mantener el diseño limpio
+    .header-search {
+      display: none;
+    }
 
     // Checkbox completamente oculto pero funcional
     #checkbox {

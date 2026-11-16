@@ -100,7 +100,6 @@ header {
     height: 40px;
     cursor: pointer;
     z-index: 101;
-    gap: 10px;
     transition: transform 0.3s ease-in-out;
   }
   .header-nav ul {
@@ -346,11 +345,11 @@ main {
 }
 
 footer {
-  background-color: white;
-  color: black;
-  padding: 20px;
-  margin-top: auto;
-  border-top: 1px solid #e0e0e0;
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+    padding: 30px 20px;
+    border-top: 1px solid #e0e0e0;
+    margin-top: auto;
 }
 footer .imagenes {
   display: flex;
